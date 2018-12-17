@@ -1,0 +1,22 @@
+package com.jp.hr.client;
+
+import com.jp.hr.exceptions.HrException;
+import com.jp.hr.services.ServiceEmployee;
+import com.jp.hr.services.ServiceEmployeeImpl;
+
+public class TestServices {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		try {
+			ServiceEmployee se = new ServiceEmployeeImpl();
+		} catch (HrException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

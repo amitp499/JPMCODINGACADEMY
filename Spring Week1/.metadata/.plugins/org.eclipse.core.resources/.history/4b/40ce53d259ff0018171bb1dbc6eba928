@@ -1,0 +1,24 @@
+package com.jp.fb.entities;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity(name = "complaint")
+@Table(name = "complaint")
+public class CustomerComplaint implements Serializable{
+
+	
+	//private static final long serialVersionUID = 4797646659395913158L;
+	private Integer COMPLAINTID;        
+	private Integer ACCOUNTID;        
+	private String BRANCHCODE;  
+	private String EMAILID;  
+	private String CATEGORY;  
+	private String DESCRIPTION; 
+	private String PRIORITY;  
+	private String STATUS;  
+	
+	
+}

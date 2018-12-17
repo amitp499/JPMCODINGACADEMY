@@ -1,0 +1,42 @@
+package com.jp.fb.entities;
+
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity(name = "complaint")
+@Table(name = "complaint")
+public class CustomerComplaint implements Serializable{
+
+	
+	//private static final long serialVersionUID = 4797646659395913158L;
+	@Id
+	@Column(name = "COMPLAINTID")
+	private Integer complaintId;
+	
+	@Column(name = "ACCOUNTID")
+	private Integer accountId;   
+	
+	@Column(name = "BRANCHCODE")
+	private String branchCode;  
+	
+	@Column(name = "EMAILID")
+	private String emailId;  
+	
+	@Column(name = "CATEGORY")
+	private String category;  
+	
+	@Column(name = "DESCRIPTION")
+	private String description; 
+	
+	@Column(name = "PRIORITY")
+	private String priority;  
+	
+	@Column(name = "STATUS")
+	private String status;  
+	
+	
+}

@@ -1,0 +1,28 @@
+package com.java;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TestSpringFactory {
+	
+	/*
+	 * 1 - Creation of an application context
+	 * 2 - The classpathXMLApplication Context refers to config file which is relative path on classpath
+	 */
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Create a spring context
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("com/java/context.xml");
+			
+		MyApplDao dao = (MyApplDao)ctx.getBean("dao");
+		System.out.println(dao.hashCode());
+		
+		MyApplDao dao1 = (MyApplDao)ctx.getBean("dao");
+		System.out.println(dao1.hashCode());
+		//ctx.
+
+	}
+
+}

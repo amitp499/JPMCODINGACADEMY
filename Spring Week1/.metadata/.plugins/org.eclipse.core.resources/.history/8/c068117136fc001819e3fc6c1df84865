@@ -1,0 +1,21 @@
+package com.java;
+
+//factory class
+public class ObjectFactory {
+	
+	private MyApplDao dao;
+	private MyApplServices service;
+	
+	
+	public ObjectFactory(){
+		
+		dao = new MyApplDao();
+	}
+	
+	//factory method
+	public MyApplDao getDao(){
+		
+		return new MyApplDao();
+	}
+
+}

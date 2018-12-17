@@ -1,0 +1,10 @@
+package com.jp.fb.entities;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity(name = "complaint")
+@Table(name = "complaint")
+public class CustomerComplaint {
+
+}

@@ -1,0 +1,16 @@
+package com.jp.hr.client;
+
+import com.jp.hr.services.ServiceEmployee;
+import com.jp.hr.services.ServiceEmployeeImpl;
+
+public class TestServices {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		ServiceEmployee se = new ServiceEmployeeImpl();
+
+	}
+
+}

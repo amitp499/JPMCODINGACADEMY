@@ -1,0 +1,7 @@
+package com.jp.product.main;
+
+public class ProductMain {
+	
+	public static void main(String[] args)
+
+}

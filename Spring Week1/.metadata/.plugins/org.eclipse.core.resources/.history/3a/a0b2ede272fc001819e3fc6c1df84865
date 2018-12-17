@@ -1,0 +1,14 @@
+package com.jp.product.main;
+
+import com.jp.product.service.ProductService;
+import com.jp.product.service.ProductServiceImpl;
+
+public class ProductMain {
+	
+	public static void main(String[] args){
+		
+		ProductService ps = new ProductServiceImpl();
+		
+	}
+
+}

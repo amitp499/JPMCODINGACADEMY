@@ -1,0 +1,13 @@
+package com.java;
+
+public class MyApplServices {
+
+	private MyApplDao dao;
+	
+	public MyApplServices(){
+		
+		//This code owns a responsobility of creating and object and holding a reference
+		dao = new MyApplDao();
+		
+	}
+}

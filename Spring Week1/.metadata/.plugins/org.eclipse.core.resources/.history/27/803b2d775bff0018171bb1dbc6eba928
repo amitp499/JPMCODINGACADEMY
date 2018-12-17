@@ -1,0 +1,21 @@
+package com.jp.fb.daos;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.jp.fb.entities.CustomerComplaint;
+import com.jp.fb.entities.Department;
+import com.jp.fb.entities.Employee;
+import com.jp.fb.exceptions.HrException;
+
+public interface DaoFundsBank {
+	
+	
+	
+	public CustomerComplaint getEmpDetails(Integer complaintId) throws HrException;
+	
+	public Department getDeptDetails(int deptId) throws HrException;
+	
+	public boolean insertNewRecord(Employee emp) throws HrException;
+
+}

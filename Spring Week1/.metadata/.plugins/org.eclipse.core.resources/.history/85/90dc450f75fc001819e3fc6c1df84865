@@ -1,0 +1,25 @@
+package com.jp.product.main;
+
+import java.util.ArrayList;
+
+import com.jp.product.entities.Product;
+import com.jp.product.exceptions.ProductException;
+import com.jp.product.service.ProductService;
+import com.jp.product.service.ProductServiceImpl;
+
+public class ProductMain {
+	
+	public static void main(String[] args) throws ProductException{
+		
+		ProductService ps = new ProductServiceImpl();
+		
+		ArrayList<Product> prdsList = ps.listOfProducts();
+		
+		for(Product prd: prdsList){
+			
+			System.out.println(prd);
+		}
+		
+	}
+
+}

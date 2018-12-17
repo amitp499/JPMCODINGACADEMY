@@ -1,0 +1,10 @@
+package com.jp.lc.main;
+
+public class LifeCycleMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

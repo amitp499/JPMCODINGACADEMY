@@ -1,0 +1,13 @@
+package com.java;
+
+public class TestDependencyInj {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		MyApplDao dao = new MyApplDao();
+		MyApplServices services = new MyApplServices();
+
+	}
+
+}

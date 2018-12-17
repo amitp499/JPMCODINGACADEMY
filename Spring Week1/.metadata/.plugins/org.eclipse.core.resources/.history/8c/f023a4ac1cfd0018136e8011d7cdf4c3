@@ -1,0 +1,18 @@
+package com.jp.hr.advises;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.springframework.core.Ordered;
+
+
+public class SecurityCheck{
+
+	public Object checkAuthorization(ProceedingJoinPoint doCall) throws Throwable{
+		
+		System.out.println("check for authorix=zation");
+		Object obj = doCall.proceed();
+		System.out.println("logging");
+		
+		return obj;
+	}
+
+}

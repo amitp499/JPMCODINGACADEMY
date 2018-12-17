@@ -1,0 +1,46 @@
+package com.java;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component("commonData")
+public class CommonAttributes {
+
+	
+	private String companyName;
+	private String address;
+	private int niftyRank;
+	
+	
+	public CommonAttributes(String companyName, String address, int niftyRank) {
+		super();
+		this.companyName = companyName;
+		this.address = address;
+		this.niftyRank = niftyRank;
+	}
+	
+	public CommonAttributes(String companyName,  int niftyRank) {
+		super();
+		this.companyName = companyName;		
+		this.niftyRank = niftyRank;
+	}
+
+
+
+
+	@Override
+	public String toString() {
+		return "CommonAttributes [companyName=" + companyName + ", address=" + address + ", niftyRank=" + niftyRank
+				+ "]";
+	}
+
+
+
+	public CommonAttributes() {
+		super();
+	}
+	
+	
+	
+	
+}

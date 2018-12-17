@@ -1,0 +1,15 @@
+package com.jp.hr.services;
+
+public class MyServices {
+	
+	public void abcMethod1(){
+		
+		
+	}
+	
+	public void abcMethod2(int x){
+		
+		
+	}
+
+}

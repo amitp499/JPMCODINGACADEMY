@@ -1,0 +1,40 @@
+package com.jp.product.dao;
+
+import java.util.ArrayList;
+
+import org.springframework.stereotype.Repository;
+
+import com.jp.product.entities.Product;
+import com.jp.product.exceptions.ProductException;
+
+@Repository("springDao")
+public class ProductDaoSpringImpl implements ProductDao{
+	
+	
+
+	public ArrayList<Product> getListOfProducts() throws ProductException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Product getProductDetails(int pId) throws ProductException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public boolean addProducts(Product prd) throws ProductException {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean deleteProducts(int pId) throws ProductException {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean updateProducts(int pId, String pName, String pType) throws ProductException {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

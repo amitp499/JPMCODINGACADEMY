@@ -1,0 +1,19 @@
+package com.jp.fb.services;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.jp.fb.entities.CustomerComplaint;
+import com.jp.fb.entities.Department;
+import com.jp.fb.entities.Employee;
+import com.jp.fb.exceptions.ComplainException;
+import com.jp.fb.exceptions.HrException;
+
+public interface ServiceComplain {
+	
+public CustomerComplaint getEmpDetails(Integer complaintId) throws ComplainException;
+		
+	
+	public boolean addNewComplaint(CustomerComplaint custComplain) throws ComplainException;
+	
+}
